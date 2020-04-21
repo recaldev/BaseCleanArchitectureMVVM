@@ -1,4 +1,4 @@
-package com.github.recaldev.basecleanmvvm
+package com.github.recaldev.presentation
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.github.recaldev.basecleanmvvm", appContext.packageName)
+        assertEquals("com.github.recaldev.presentation.test", appContext.packageName)
     }
 }

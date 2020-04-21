@@ -1,4 +1,4 @@
-package com.github.recaldev.basecleanmvvm
+package com.github.recaldev.presentation
 
 import org.junit.Test
 
