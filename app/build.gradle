@@ -1,0 +1,23 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.github.recaldev.basecleanmvvm'
+    compileSdk 37
+
+    defaultConfig {
+        applicationId 'com.github.recaldev.basecleanmvvm'
+        minSdk 23
+        targetSdk 37
+        versionCode 1
+        versionName '1.0'
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+}
+
+dependencies {
+    implementation project(':presentation')
+    implementation 'androidx.core:core-ktx:1.17.0'
+}

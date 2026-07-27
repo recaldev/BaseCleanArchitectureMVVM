@@ -1,3 +1,11 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
 # Compiled class file
 *.class
 
@@ -10,8 +18,9 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package files
 *.jar
+!gradle/wrapper/gradle-wrapper.jar
 *.war
 *.nar
 *.ear
@@ -19,5 +28,18 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs
 hs_err_pid*
+
+# Android Studio
+.navigation/
+captures/
+*.iml
+/.idea/
+
+# Gradle
+/.gradle/
+build/
+
+# Local configuration
+/local.properties
