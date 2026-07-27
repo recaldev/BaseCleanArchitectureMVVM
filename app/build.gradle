@@ -1,31 +1,23 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    namespace 'com.github.recaldev.basecleanmvvm'
+    compileSdk 37
 
     defaultConfig {
-        applicationId "com.github.recaldev.basecleanmvvm"
-        minSdkVersion 16
-        targetSdkVersion 29
+        applicationId 'com.github.recaldev.basecleanmvvm'
+        minSdk 23
+        targetSdk 37
         versionCode 1
-        versionName "1.0"
+        versionName '1.0'
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
 }
 
 dependencies {
-    implementation project(":presentation")
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation project(':presentation')
+    implementation 'androidx.core:core-ktx:1.17.0'
 }
